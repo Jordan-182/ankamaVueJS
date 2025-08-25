@@ -1,0 +1,91 @@
+/* Theme */
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --darkText: #11111a;
+  --lightGrey: #e9e8e8;
+  --darkGrey: #323438;
+  --navLinks: #535353;
+  --orange: #e7a300;
+  --darkOrange: #e7411a;
+  --lightRed: #f96767;
+  --green: #a7cc26;
+  --purple: #9a39f5;
+  --lightYellow: #ffefca;
+  --yellow: #fff36e;
+  --footer: #000000;
+  --footerText: #838383;
+  --sideBar: #1c1c1c;
+  /* Fonts */
+  --roboto: 'Roboto', sans-serif;
+  --bebasNeue: 'Bebas Neue', sans-serif;
+  --lato: 'Lato', sans-serif;
+  --dosis: 'Dosis', sans-serif;
+
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+body {
+  min-height: 100vh;
+  color: var(--darkText);
+  background: var(--white);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.swiper-pagination-bullet {
+  background: var(--white);
+  opacity: 0.6;
+  box-shadow: rgb(0, 0, 0) 1px 1px 2px 0px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--darkOrange);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 82px;
+  }
+}
