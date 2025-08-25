@@ -21,7 +21,7 @@ defineProps<{
 
 <style scoped>
 .sidebar {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   top: 82px;
   left: 0;
